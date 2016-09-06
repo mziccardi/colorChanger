@@ -4,12 +4,13 @@ var colorButton = $('.randomButton');
 
 
 colorButton.on('click',function(){
-  $('body').css("background", randomColor);
+  $('body').css('background',"rgb" + randomColor())
 });
 
 
 
 
 function randomColor(){
-  '('+ (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+
+return '('+ (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ',' + (Math.floor(Math.random() * 255)) + ')';
 }
